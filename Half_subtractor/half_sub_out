@@ -1,0 +1,69 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x56478b0a1660 .scope module, "half_sub_tb" "half_sub_tb" 2 13;
+ .timescale 0 0;
+v0x56478b0b4c20_0 .var "a", 0 0;
+v0x56478b0b4ce0_0 .var "b", 0 0;
+v0x56478b0b4db0_0 .net "borrow", 0 0, L_0x56478b0b5150;  1 drivers
+v0x56478b0b4eb0_0 .net "diff", 0 0, L_0x56478b0b4f80;  1 drivers
+S_0x56478b0a17f0 .scope module, "h1" "half_sub" 2 16, 2 2 0, S_0x56478b0a1660;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "diff";
+    .port_info 1 /OUTPUT 1 "borrow";
+    .port_info 2 /INPUT 1 "a";
+    .port_info 3 /INPUT 1 "b";
+L_0x56478b0b4f80 .functor XOR 1, v0x56478b0b4c20_0, v0x56478b0b4ce0_0, C4<0>, C4<0>;
+L_0x56478b0b50e0 .functor NOT 1, v0x56478b0b4c20_0, C4<0>, C4<0>, C4<0>;
+L_0x56478b0b5150 .functor AND 1, L_0x56478b0b50e0, v0x56478b0b4ce0_0, C4<1>, C4<1>;
+v0x56478b067cf0_0 .net "a", 0 0, v0x56478b0b4c20_0;  1 drivers
+v0x56478b0b4840_0 .net "b", 0 0, v0x56478b0b4ce0_0;  1 drivers
+v0x56478b0b4900_0 .net "borrow", 0 0, L_0x56478b0b5150;  alias, 1 drivers
+v0x56478b0b49d0_0 .net "diff", 0 0, L_0x56478b0b4f80;  alias, 1 drivers
+v0x56478b0b4a90_0 .net "w1", 0 0, L_0x56478b0b50e0;  1 drivers
+    .scope S_0x56478b0a1660;
+T_0 ;
+    %vpi_call 2 19 "$monitor", $time, " A=%b B=%b Diff=%b Borrow=%b", v0x56478b0b4c20_0, v0x56478b0b4ce0_0, v0x56478b0b4eb0_0, v0x56478b0b4db0_0 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x56478b0a1660;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56478b0b4c20_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56478b0b4ce0_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56478b0b4c20_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56478b0b4ce0_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56478b0b4c20_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56478b0b4ce0_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56478b0b4c20_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56478b0b4ce0_0, 0, 1;
+    %delay 5, 0;
+    %end;
+    .thread T_1;
+    .scope S_0x56478b0a1660;
+T_2 ;
+    %vpi_call 2 34 "$dumpfile", "half_sub.dump" {0 0 0};
+    %vpi_call 2 35 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x56478b0a1660 {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "half_sub.v";

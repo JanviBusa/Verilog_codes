@@ -1,0 +1,148 @@
+$date
+	Thu Jun 30 11:08:18 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module demux_1x8_tb $end
+$var wire 1 ! y7 $end
+$var wire 1 " y6 $end
+$var wire 1 # y5 $end
+$var wire 1 $ y4 $end
+$var wire 1 % y3 $end
+$var wire 1 & y2 $end
+$var wire 1 ' y1 $end
+$var wire 1 ( y0 $end
+$var reg 1 ) in $end
+$var reg 1 * s0 $end
+$var reg 1 + s1 $end
+$var reg 1 , s2 $end
+$scope module de1 $end
+$var wire 1 ) in $end
+$var wire 1 * s0 $end
+$var wire 1 + s1 $end
+$var wire 1 , s2 $end
+$var wire 1 ! y7 $end
+$var wire 1 " y6 $end
+$var wire 1 # y5 $end
+$var wire 1 $ y4 $end
+$var wire 1 % y3 $end
+$var wire 1 & y2 $end
+$var wire 1 ' y1 $end
+$var wire 1 ( y0 $end
+$var wire 1 - w6 $end
+$var wire 1 . w5 $end
+$var wire 1 / w4 $end
+$var wire 1 0 w3 $end
+$var wire 1 1 w2 $end
+$var wire 1 2 w1 $end
+$scope module de1 $end
+$var wire 1 ) in $end
+$var wire 1 , s $end
+$var wire 1 2 y1 $end
+$var wire 1 1 y2 $end
+$upscope $end
+$scope module de2 $end
+$var wire 1 2 in $end
+$var wire 1 + s $end
+$var wire 1 0 y1 $end
+$var wire 1 / y2 $end
+$upscope $end
+$scope module de3 $end
+$var wire 1 1 in $end
+$var wire 1 + s $end
+$var wire 1 . y1 $end
+$var wire 1 - y2 $end
+$upscope $end
+$scope module de4 $end
+$var wire 1 0 in $end
+$var wire 1 * s $end
+$var wire 1 ( y1 $end
+$var wire 1 ' y2 $end
+$upscope $end
+$scope module de5 $end
+$var wire 1 / in $end
+$var wire 1 * s $end
+$var wire 1 & y1 $end
+$var wire 1 % y2 $end
+$upscope $end
+$scope module de6 $end
+$var wire 1 . in $end
+$var wire 1 * s $end
+$var wire 1 $ y1 $end
+$var wire 1 # y2 $end
+$upscope $end
+$scope module de7 $end
+$var wire 1 - in $end
+$var wire 1 * s $end
+$var wire 1 " y1 $end
+$var wire 1 ! y2 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+12
+01
+10
+0/
+0.
+0-
+0,
+0+
+0*
+1)
+1(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#5
+0(
+1'
+1*
+#10
+00
+1&
+0'
+1/
+0*
+1+
+#15
+0&
+1%
+1*
+#20
+1$
+02
+1.
+0%
+0/
+11
+0*
+0+
+1,
+#25
+0$
+1#
+1*
+#30
+0.
+1"
+0#
+1-
+0*
+1+
+#35
+0"
+1!
+1*
+#40

@@ -1,0 +1,59 @@
+$date
+	Thu Jun 15 16:21:42 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module full_adder_tb $end
+$var wire 1 ! sum $end
+$var wire 1 " carry_out $end
+$var reg 1 # a $end
+$var reg 1 $ b $end
+$var reg 1 % carry_in $end
+$scope module f1 $end
+$var wire 1 # a $end
+$var wire 1 $ b $end
+$var wire 1 % carry_in $end
+$var wire 1 " carry_out $end
+$var wire 1 ! sum $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0%
+0$
+0#
+0"
+0!
+$end
+#5
+1!
+1%
+#10
+0%
+1$
+#15
+0!
+1"
+1%
+#20
+1!
+0"
+0%
+0$
+1#
+#25
+0!
+1"
+1%
+#30
+0%
+1$
+#35
+1!
+1%
+#40

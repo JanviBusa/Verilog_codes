@@ -1,0 +1,61 @@
+$date
+	Tue Jun 20 19:04:16 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module encoder_8x3_tb $end
+$var wire 3 ! out [2:0] $end
+$var reg 8 " in [7:0] $end
+$scope module en1 $end
+$var wire 8 # in [7:0] $end
+$var reg 3 $ out [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 $
+b1 #
+b1 "
+b0 !
+$end
+#5
+b1 !
+b1 $
+b10 "
+b10 #
+#10
+b10 !
+b10 $
+b100 "
+b100 #
+#15
+b11 !
+b11 $
+b1000 "
+b1000 #
+#20
+b100 !
+b100 $
+b10000 "
+b10000 #
+#25
+b101 !
+b101 $
+b100000 "
+b100000 #
+#30
+b110 !
+b110 $
+b1000000 "
+b1000000 #
+#35
+b111 !
+b111 $
+b10000000 "
+b10000000 #
+#40
