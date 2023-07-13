@@ -1,0 +1,51 @@
+$date
+	Tue Jun 13 17:56:03 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module DMUX_1x4_tb $end
+$var wire 4 ! out [3:0] $end
+$var reg 2 " sel [1:0] $end
+$scope module d1 $end
+$var wire 1 # d $end
+$var wire 2 $ sel [1:0] $end
+$var wire 1 % w1 $end
+$var wire 1 & w2 $end
+$var wire 4 ' out [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0x '
+1&
+1%
+b0 $
+z#
+b0 "
+b0x !
+$end
+#5
+0%
+b0x0 !
+b0x0 '
+b1 "
+b1 $
+#10
+0&
+1%
+b0x00 !
+b0x00 '
+b10 "
+b10 $
+#15
+0%
+bx000 !
+bx000 '
+b11 "
+b11 $
+#20
